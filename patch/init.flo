@@ -1,5 +1,5 @@
 # KCAL configuration
     write /sys/devices/platform/kcal_ctrl.0/kcal_enable 1
     write /sys/devices/platform/kcal_ctrl.0/kcal_invert 0
-    write /sys/devices/platform/kcal_ctrl.0/kcal "255 255 2555"
+    write /sys/devices/platform/kcal_ctrl.0/kcal "255 228 206"
 
