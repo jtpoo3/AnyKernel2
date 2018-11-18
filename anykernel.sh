@@ -39,6 +39,9 @@ dump_boot;
 
 # begin ramdisk changes
 
+# init.flo.rc
+insert_file init.flo.rc "KCAL configuration" before "setprop vold.post_fs_data_done 1" init.flo;
+
 # fstab.flo
 patch_fstab fstab.flo /data ext4 options "noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,errors=panic" "noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,errors=panic,noauto_da_alloc";
 patch_fstab fstab.flo /cache ext4 options "noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,errors=panic" "noatime,nosuid,nodev,barrier=1,data=ordered,nomblk_io_submit,errors=panic,noauto_da_alloc";
