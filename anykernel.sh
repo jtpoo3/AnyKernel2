@@ -14,6 +14,7 @@ device.name2=deb
 device.name3=
 device.name4=
 device.name5=
+supported.versions=
 '; } # end properties
 
 # shell variables
